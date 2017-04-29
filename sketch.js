@@ -36,7 +36,7 @@ function setup() {
     slider = createSlider(1, 50, 1, 1);
     slider.parent('slider');
 
-    load_button = createButton('LOAD MODEL');
+    load_button = createButton('LOAD PRE-TRAINED MODEL');
     load_button.parent('buttons');
     load_button.mousePressed(function() {
         ne.generations.generations[0].genomes = loaded_model.generations.generations[0].genomes;
