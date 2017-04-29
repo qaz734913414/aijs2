@@ -27,9 +27,7 @@ var loaded_model;
 var save_button;
 
 function preload() {
-    loadJSON('model.json', function(data) {
-        loaded_model = data;
-    });
+    loaded_model = loadJSON('model.json');
 }
 
 function setup() {
